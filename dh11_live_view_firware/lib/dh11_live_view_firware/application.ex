@@ -10,9 +10,12 @@ defmodule Dh11LiveViewFirware.Application do
     # for other strategies and supported options
     opts = [strategy: :one_for_one, name: Dh11LiveViewFirware.Supervisor]
 
+    # pin = Application.get_env(:nerves_dht_sample, :pin)
+    # sensor = Application.get_env(:nerves_dht_sample, :sensor)
+
     children =
       [
-        {NervesDHT, [name: :my_sensor, sensor: :dht11, pin: 10]}
+        # worker(Dh11LiveViewFirware.LoggerDht, [{pin, sensor}, [name: Dh11LiveViewFirware.LoggerDht]]),
         # Children for all targets
         # Starts a worker by calling: Dh11LiveViewFirware.Worker.start_link(arg)
         # {Dh11LiveViewFirware.Worker, arg},
