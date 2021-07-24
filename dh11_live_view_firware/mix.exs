@@ -36,8 +36,8 @@ defmodule Dh11LiveViewFirware.MixProject do
       {:shoehorn, "~> 0.7.0"},
       {:ring_logger, "~> 0.8.1"},
       {:toolshed, "~> 0.2.13"},
-      # {:nerves_dht, git: "https://github.com/visciang/nerves_dht.git", tag: "1.2.0"},
-      {:dht, "~> 0.1", targets: @all_targets},
+      {:nerves_dht, git: "https://github.com/visciang/nerves_dht.git", tag: "1.2.0"},
+      # {:dht, "~> 0.1", targets: @all_targets},
 
       # Dependencies for all targets except :host
       {:nerves_runtime, "~> 0.11.3", targets: @all_targets},

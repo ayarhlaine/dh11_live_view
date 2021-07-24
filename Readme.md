@@ -11,7 +11,9 @@ mix run
 
 mix firmware
 
+mix firmware.gen.script
 
+./upload.sh
 
 ### Run UI
 cd path/to/ui
